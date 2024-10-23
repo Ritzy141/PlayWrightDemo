@@ -6,12 +6,17 @@
   "scripts": {
     "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
     "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
-    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit"
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "allure-gen": "allure generate ./allure-results -o ./allure-report --clean",
+    "allure-open": "allure open ./allure-report"
   },
   "author": "Ritesh",
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.46.1",
     "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "allure-playwright": "^3.0.5"
   }
 }

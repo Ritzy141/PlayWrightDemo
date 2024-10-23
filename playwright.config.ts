@@ -4,14 +4,18 @@ const config: PlaywrightTestConfig =
 {
     timeout: 60000,
     retries: 0,
-    reporter: 'html',
+    reporter: [
+      ['html', {open: 'never'}], 
+      ['allure-playwright', {open: 'never'}]
+    ],
     use: {
         headless: true,
         viewport: { width: 1800, height: 1000 },
         actionTimeout: 15000,
         ignoreHTTPSErrors: true,
-        video: 'off',
-        screenshot: 'off'
+        trace: 'on-first-retry',
+        video: 'on',
+        screenshot: 'only-on-failure'
       },
       projects: [
         {

@@ -56,3 +56,14 @@
 ## To capture an artifcat on faile go to playwright.config file and change the following settings,
 ### video: 'off'
 ### screenshot: 'off'
+
+## Install Alure Reporting
+### Goto https://www.npmjs.com/package/allure-playwright
+#### Install and configure accordingly
+
+### Then goto https://allurereport.org/docs/install-for-windows/#install-from-an-archive
+#### Follow instructions, very stright forward
+
+### In package.json, under scripts, add the following;
+####    "allure-gen": "allure generate ./allure-results -o ./allure-report --clean",
+####    "allure-open": "allure open ./allure-report"

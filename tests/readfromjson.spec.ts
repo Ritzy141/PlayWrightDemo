@@ -7,7 +7,7 @@ test.describe("Data Driven login tests", function()
     for (const data of testdata) {
         test.describe(`Login with users ${data.id}`, function()
         {
-            test.only(`Test Login with mulitple records: ${data.username} `, async ({ page }) => {
+            test(`Test Login with mulitple records: ${data.username} `, async ({ page }) => {
 
                 await page.goto('https://freelance-learn-automation.vercel.app/login');
             
