@@ -4,13 +4,14 @@ const config: PlaywrightTestConfig =
 {
     timeout: 60000,
     retries: 0,
+    reporter: 'html',
     use: {
         headless: true,
-        viewport: { width: 1280, height: 720 },
+        viewport: { width: 1800, height: 1000 },
         actionTimeout: 15000,
         ignoreHTTPSErrors: true,
         video: 'off',
-        screenshot: 'off',
+        screenshot: 'off'
       },
       projects: [
         {

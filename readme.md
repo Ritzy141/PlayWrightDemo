@@ -28,6 +28,8 @@
 
 ## See documentation
 ### https://playwright.dev/docs/test-cli
+### https://playwright.dev/docs/intro
+### https://playwright.dev/docs/api/class-playwright
 
 ## Using playwright config files
 ### create the config file, playwright.config.ts
